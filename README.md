@@ -1,5 +1,6 @@
 # C-language-codes-for-Stock-Market
 
+
 #include <stdio.h>
 int main ()
 {   char comp[20];
@@ -18,7 +19,7 @@ int main ()
     printf("\n\nWrite the name of the Company: ");
     scanf("%[^\n]", &comp);
 
-    printf(" \n ENTER\n [1] For Balance Sheet Analysis\n\n [2] For Profit & Loss Analysis\n\n [3] For CAGR Calculation\n\n [4] For Finding Principal Value \n\n [5] For Finding Principal Value\n\n [6] For Targerting Share Price Using 'BENJAMIN GAHRAM MODEL'\n\n [7] For Targeting Share Price Using 'EV/EBIDTA MODEL'\n");
+    printf(" \n ENTER\n [1] For Balance Sheet Analysis\n\n [2] For Profit & Loss Analysis\n\n [3] For CAGR Calculation\n\n [4] For Finding Final Value \n\n [5] For Finding Principal Value\n\n [6] For Targerting Share Price Using 'BENJAMIN GAHRAM MODEL'\n\n [7] For Targeting Share Price Using 'EV/EBIDTA MODEL'\n");
     scanf("%d", &n1);
     switch(n1)
     {
@@ -358,7 +359,7 @@ int main ()
         EP=TP*2/3;
 
         printf("\nTarget Price of %s is Rs.%0.2f and \nEntry price is  Rs.%0.2f", comp, TP, EP);
-
+        break;
     default:
         printf("!!INVALID CHOICE!!!");
         break;
